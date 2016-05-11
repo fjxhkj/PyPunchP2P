@@ -5,9 +5,9 @@ Python p2p chat client/server with built-in NAT traversal (UDP hole punching).
 I've write [an article][4] about the detailed implementation (in Chinese).
 
 Based on  
-[koenbollen's gist][1]  
-[pystun][2]  
-[Peer-to-Peer Communication Across Network Address Translators][3]
+- [koenbollen's gist][1]  
+- [pystun][2]  
+- [Peer-to-Peer Communication Across Network Address Translators][3]
 
 Python edition: py2.6+ but no Python 3 support  
 Platform: Linux/Windows
@@ -44,6 +44,10 @@ $ client.py 1.2.3.4 5678 100 1
 pretending your client is behind RestrictNAT.  
 You can test the relay server functionality by making `3` as the forth parameter, since if one client is behind symmetric NAT, there will be no direct connection but server forwaring.
 
+## Links
+- [作者博客][4]
+- [在symmetric NAT中怎么实现p2p][5]
+
 License
 -------
 MIT
@@ -52,6 +56,7 @@ MIT
 [2]:https://pypi.python.org/pypi/pystun
 [3]:http://www.bford.info/pub/net/p2pnat/index.html
 [4]:http://www.laike9m.com/blog/pythonshi-xian-stunturnp2pliao-tian,29/
+[5]:http://lifeofzjs.com/blog/2014/07/19/how-p2p-in-symmetric-nat/
 
 
 
